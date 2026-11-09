@@ -1,13 +1,14 @@
 name: Prober Workflow
 
-on:
-  workflow_call:
-    inputs:
-      sigstore:
-        description: 'Which Sigstore instance to use for signing'
-        required: true
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+#     inputs:
+#       sigstore:
+#         description: 'Which Sigstore instance to use for signing'
+#         required: true
+#         type: string
+# 
 jobs:
   probe:
     runs-on: ubuntu-latest

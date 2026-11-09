@@ -1,11 +1,12 @@
 name: Public-Good Sigstore Prober
 
-on:
-  workflow_dispatch:
-  schedule:
-    # run every 5 minutes, as often as Github Actions allows
-    - cron: '*/5 * * * *'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     # run every 5 minutes, as often as Github Actions allows
+#     - cron: '*/5 * * * *'
+# 
 jobs:
   prober:
     if: github.repository_owner == 'actions'

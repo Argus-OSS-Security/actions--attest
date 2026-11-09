@@ -1,14 +1,15 @@
 name: Continuous Integration
 
-on:
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
-      - 'releases/*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#   push:
+#     branches:
+#       - main
+#       - 'releases/*'
+# 
 permissions: {}
 
 jobs:

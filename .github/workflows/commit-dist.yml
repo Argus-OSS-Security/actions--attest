@@ -14,12 +14,13 @@
 # the committed dist/. The verify-head guard below is our integrity check.
 name: Commit dist
 
-on:
-  workflow_run:
-    workflows: ["Rebuild dist"]
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: ["Rebuild dist"]
+#     types:
+#       - completed
+# 
 permissions:
   contents: read
 
